@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Koulen:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Klee One:wght@400&display=swap" />
+</head>
+
+<body>
+    <div class="menu-de-personajes">
+        <div class="lago-background-parent">
+            <div class="lago-background"></div>
+            <div class="el-lago-de-container">
+                <span class="el-lago-de-container1">
+                    <p class="el">El</p>
+                    <p class="lago">Lago</p>
+                    <p class="de-los">
+                        <span class="de-los1">de los</span>
+                        <span> </span>
+                    </p>
+                    <p class="gaiteros">Gaiteros</p>
+                </span>
+            </div>
+        </div>
+        <img class="group-icon" alt="" src="./public/group.svg" />
+
+        <div class="character-selection">
+            <div class="rectangle-parent">
+                <div class="frame-child"></div>
+                <div class="character-background"></div>
+            </div>
+            <div class="character-options">
+                <div class="character-options-child"></div>
+                <img class="character-option-placeholder" alt="" src="./public/character-option-placeholder.svg" />
+
+                <div class="wrapper-character-option-place">
+                    <img class="character-option-placeholder1" alt="" src="./public/frame-1.svg" />
+                </div>
+                <div class="wrapper-vector-1">
+                    <img class="wrapper-vector-1-child" alt="" src="./public/vector-1.svg" />
+                </div>
+            </div>
+            <img class="option-placeholder-one" alt="" src="./public/frame-2.svg" />
+
+            <img class="option-placeholder-two" alt="" src="./public/option-placeholder-two.svg" />
+
+            <div class="wrapper-option-divider">
+                <img class="option-divider-icon" loading="lazy" alt="" src="./public/vector.svg" />
+            </div>
+            <img class="gravity-uiqr-code-icon" loading="lazy" alt="" src="./public/gravityuiqrcode.svg" />
+
+            <img class="character-selection-child" alt="" src="./public/group-2.svg" />
+
+            <img class="patron-azul" alt="" src="./public/patron-azul.svg" />
+
+            <div class="wrapper-home-button-icon-parent">
+                <div class="wrapper-home-button-icon">
+                    <img class="home-button-icon" alt="" src="./public/vector-1.svg" />
+                </div>
+                <img class="ant-designhome-filled-icon" loading="lazy" alt="" src="./public/antdesignhomefilled.svg"
+                    id="antDesignhomeFilled" />
+            </div>
+
+            <div class="main-content">
+                <img id="central-image" src="./public/Posible.png" alt="Imagen Central" class="central-image">
+                <h2 id="main-title" class="main">La Retreta</h2>
+                <button id="play-pause-button" class="play-button"></button>
+            </div>
+
+
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <div class="copyright">
+                    <div class="copyright-background-one"></div>
+                    <div class="copyright-background-two"></div>
+                    <img class="phcopyright-icon" loading="lazy" alt="" src="./public/phcopyright.svg" />
+                </div>
+                <div class="todos-los-derechos">Todos los derechos reservados</div>
+                <div class="continue-button-background-parent" id="Btn">
+                    <div class="continue-button-background"></div>
+                    <h2 class="continuar">REGRESAR</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('play-pause-button').addEventListener('click', function () {
+            const button = document.getElementById('play-pause-button');
+            if (button.classList.contains('play-button')) {
+                button.classList.remove('play-button');
+                button.classList.add('pause-button');
+            } else {
+                button.classList.remove('pause-button');
+                button.classList.add('play-button');
+            }
+        });
+    </script>
+</body>
+
+</html>

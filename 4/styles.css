@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('path-to-background-image.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.home-button,
+.tambora-button,
+.back-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.main-content {
+    margin: 20px 0;
+}
+
+.central-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.play-button,
+.pause-button {
+    background: url('path-to-play-icon.png') no-repeat center;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.pause-button {
+    background: url('path-to-pause-icon.png') no-repeat center;
+    background-size: contain;
+}
+
+.lyrics {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.patron-azul {
+    position: absolute;
+    top: -18px;
+    left: -43px;
+    width: 475.2px;
+    height: 1134px;
+    z-index: 13;
+}
+
+.patron-azul {
+    top: -56px;
+    left: -293px;
+    width: 1060.9px;
+    height: 1061px;
+    z-index: 14;
+}
+
+.menu-de-personajes {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-white);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 239px;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    font-size: var(--font-size-11xl);
+    color: var(--color-white);
+    font-family: var(--font-montserrat);
+}

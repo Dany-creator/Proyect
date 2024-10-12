@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repícame la Tambora</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <img class="patron-azul" alt="" src="./group-5.svg" />
+
+  <!-- Contenedor principal -->
+  <div class="container">
+    <!-- Botón Home -->
+    <div class="header">
+      <div class="wrapper-home-button-icon-parent">
+        <img class="ant-designhome-filled-icon" loading="lazy" alt="" src="./antdesignhomefilled.svg"
+          id="antDesignhomeFilled" />
+      </div>
+      <div class="rectangle-11"></div>
+      <div class="text-wrapper-4">Repícame la tambora</div>
+      <img class="mask-group" src="img/mask-group.png" />
+    </div>
+
+    <!-- Grupo de opciones -->
+    <div class="buttons-grid" id="button-grid">
+      <button class="button" data-value="1">INSTRUMENTOS</button>
+      <button class="button" data-value="2">GRAN COQUIVACOA</button>
+      <button class="button" data-value="3">CHIQUINQUIREÑOS</button>
+      <button class="button" data-value="4">ALTASIA</button>
+      <button class="button" data-value="5">BARRIO OBRERO DE CABIMAS</button>
+      <button class="button" data-value="6">ALEATORIO</button>
+    </div>
+
+    <!-- Flechas y botón regresar -->
+    <div class="footer">
+      <div class="footer-content">
+        <button id="btn" class="continue-button-background2" style="display: none;">Continuar</button>
+        <div class="continue-button-background-parent">
+          <button class="continue-button-background" style="display: none;" id="btn-regresar">
+            <h2 class="continuar">Regresar</h2>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const gridButtons = document.querySelectorAll('.button');
+      const continueBtn = document.getElementById('btn');
+      const backBtn = document.getElementById('btn-regresar');
+
+      let selectedValue = null;
+      let selectionMade = false; // Para rastrear si ya se hizo una selección
+      let selectedButtonIndex = 0; // Para almacenar el índice de la selección
+
+      // Definir los nuevos nombres para cada botón dependiendo de la selección
+      const buttonNames = {
+        1: ['TAMBORA', 'FURRO', 'CUATRO', 'CHARRASCA', 'MARACAS', 'CONJUNTO DE INSTRUMENTOS'],
+        2: ['PUNTA ICOTEA', 'LA NEGRA COCOA COA', 'LA RETRETA', 'LAS CABRAS', 'LA GAITA QUE A MI ME GUSTA', 'TAMBORERA NO. 9'],
+        3: ['UNA LUZ EN MI CAMINO', 'LA ELEGIDA', 'TIENE CORRONA', 'ALITASIA', 'BARRIO OBRERO DE CABIMAS', 'ALEATORIO'],
+        4: ['HABLAME DE MARACAIBO', 'AY MARACAIBO!', 'CON LAS MANOS EN EL PECHO', 'CON LA MAS PURA INTENCION', 'DE BOCA EN BOCA', 'EL ZULIA VIVE'],
+        5: ['INSTRUMENTOS', 'GRAN COQUIVACOA', 'CHIQUINQUIREÑOS', 'ALTASIA', 'BARRIO OBRERO DE CABIMAS', 'ALEATORIO'],
+        6: ['INSTRUMENTOS', 'GRAN COQUIVACOA', 'CHIQUINQUIREÑOS', 'ALTASIA', 'BARRIO OBRERO DE CABIMAS', 'ALEATORIO']
+      };
+
+      const actualname = {
+        1: ['INSTRUMENTOS', 'GRAN COQUIVACOA', 'CHIQUINQUIREÑOS', 'ALTASIA', 'BARRIO OBRERO DE CABIMAS', 'ALEATORIO']
+      };
+
+      gridButtons.forEach((button, index) => {
+        button.addEventListener('click', function () {
+          if (!selectionMade) {
+            // Primera selección: Cambiar nombres de los botones
+            selectedValue = this.getAttribute('data-value');
+            if (selectedValue != 6) {
+              selectedButtonIndex = index + 1; // Almacenar el índice del botón seleccionado
+
+              const newNames = buttonNames[selectedValue];
+              gridButtons.forEach((btn, idx) => {
+                btn.textContent = newNames[idx];  // Asignar nuevos nombres
+              });
+
+              continueBtn.style.display = 'block';  // Mostrar botón continuar
+              backBtn.style.display = 'block';      // Mostrar botón regresar
+              selectionMade = true;                 // Marcar que se hizo la primera selección
+            } else {
+              selectedValue = Math.floor(Math.random() * (25) + 1);
+              selectedButtonIndex = selectedValue;
+              continueBtn.style.display = 'block';  // Mostrar botón continuar
+              backBtn.style.display = 'block';      // Mostrar botón regresar
+              selectionMade = true;                 // Marcar que se hizo la primera selección
+            }
+          } else {
+            if (selectedValue == 1) {
+              selectedValue = this.getAttribute('data-value');
+              selectedButtonIndex = selectedValue;
+            } else if (selectedValue == 2) {
+              selectedValue = parseInt(this.getAttribute('data-value'), 10);
+              selectedButtonIndex = selectedValue + 6;
+            } else if (selectedValue == 3) {
+              selectedValue = parseInt(this.getAttribute('data-value'), 10);
+              selectedButtonIndex = selectedValue + 12;
+            } else if (selectedValue == 4) {
+              selectedValue = parseInt(this.getAttribute('data-value'), 10);
+              selectedButtonIndex = selectedValue + 18;
+            } else if (selectedValue == 5) {
+              selectedValue = parseInt(this.getAttribute('data-value'), 10);
+              selectedButtonIndex = selectedValue + 24;
+            } else {
+              selectedValue = Math.floor(Math.random() * (25) + 1);
+              selectedButtonIndex = selectedValue;
+            }
+          }
+        });
+      });
+
+      // Acción para el botón "Continuar"
+      continueBtn.addEventListener('click', function () {
+        if (selectionMade) {
+          // Guardar el valor de la segunda selección (del 1 al 26)
+          localStorage.setItem('userSelection', `option${selectedButtonIndex}`);
+
+          // Redirigir a otra página
+          window.location.href = '../AnimaPackage-Html-GUldO/index - copia.html';
+        }
+      });
+      // Acción para el botón de regresar
+      backBtn.addEventListener('click', function () {
+        // Volver al estado inicial
+        const oldNames = actualname[1];
+        gridButtons.forEach((btn, index) => {
+          btn.textContent = oldNames[index];  // Restaurar nombres originales
+        });
+
+        continueBtn.style.display = 'none';
+        backBtn.style.display = 'none';
+
+        // Limpiar localStorage y resetear las selecciones
+        localStorage.clear();
+        selectedValue = null;
+        selectionMade = false;    // Permitir una nueva primera selección
+      });
+    });
+
+    var antDesignhomeFilled = document.getElementById("antDesignhomeFilled");
+    if (antDesignhomeFilled) {
+      antDesignhomeFilled.addEventListener("click", function (e) {
+        window.location.href = '../index.html';
+      });
+    }
+
+
+  </script>
+</body>
+
+</html>

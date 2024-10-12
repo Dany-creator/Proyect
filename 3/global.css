@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-koulen: Koulen;
+  --font-klee-one: "Klee One";
+  --font-montserrat: Montserrat;
+
+  /* font sizes */
+  --font-size-11xl: 30px;
+  --font-size-12xl: 31px;
+
+  /* Colors */
+  --color-white: #fff;
+
+  /* Paddings */
+  --padding-mid: 17px;
+  --padding-10xs: 3px;
+}

@@ -1,0 +1,726 @@
+.PUNTA-ICOTEA {
+  background-color: #ffffff;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.PUNTA-ICOTEA .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 980px;
+  height: 2124px;
+  position: relative;
+}
+
+.PUNTA-ICOTEA .overlap {
+  position: absolute;
+  width: 1007px;
+  height: 1164px;
+  top: -48px;
+  left: -288px;
+}
+
+.PUNTA-ICOTEA .rectangle {
+  position: absolute;
+  width: 430px;
+  height: 163px;
+  top: 553px;
+  left: 288px;
+  background: linear-gradient(180deg, rgb(229.5, 187.27, 137.7) 0%, rgba(75.44, 56.8, 39.6, 0.87) 100%);
+}
+
+.PUNTA-ICOTEA .rectangle-2 {
+  position: absolute;
+  width: 430px;
+  height: 374px;
+  top: 36px;
+  left: 288px;
+  background-color: #bde7fd;
+}
+
+.PUNTA-ICOTEA .vector {
+  position: absolute;
+  width: 116px;
+  height: 341px;
+  top: 55px;
+  left: 288px;
+}
+
+.PUNTA-ICOTEA .rectangle-3 {
+  position: absolute;
+  width: 430px;
+  height: 194px;
+  top: 410px;
+  left: 288px;
+  background-color: #30b9ca;
+}
+
+.PUNTA-ICOTEA .rectangle-4 {
+  position: absolute;
+  width: 430px;
+  height: 84px;
+  top: 410px;
+  left: 288px;
+  filter: blur(8.1px);
+  background: linear-gradient(180deg, rgb(31.45, 132.7, 154.06) 0%, rgb(48, 185, 202) 100%);
+}
+
+.PUNTA-ICOTEA .frame {
+  position: absolute;
+  width: 430px;
+  height: 85px;
+  top: 592px;
+  left: 288px;
+}
+
+.PUNTA-ICOTEA .img {
+  position: absolute;
+  width: 430px;
+  height: 85px;
+  top: 572px;
+  left: 288px;
+}
+
+.PUNTA-ICOTEA .rectangle-5 {
+  position: absolute;
+  width: 430px;
+  height: 284px;
+  top: 716px;
+  left: 288px;
+  background: linear-gradient(180deg, rgb(20.05, 11.51, 54.19) 0%, rgb(159.38, 132.04, 100.94) 100%);
+}
+
+
+.PUNTA-ICOTEA .overlap-group-wrapper {
+  position: absolute;
+  width: 494px;
+  height: 131px;
+  top: 284px;
+  left: 260px;
+  overflow: hidden;
+}
+
+.PUNTA-ICOTEA .overlap-group {
+  position: relative;
+  width: 430px;
+  height: 207px;
+  top: 1px;
+  left: 28px;
+}
+
+.PUNTA-ICOTEA .ellipse {
+  position: absolute;
+  width: 203px;
+  height: 203px;
+  top: 4px;
+  left: 119px;
+  border-radius: 101.5px;
+  background: radial-gradient(50% 50% at 50% 50%, rgb(255, 221, 46) 0%, rgba(236.94, 208.03, 59.23, 0) 100%);
+}
+
+.PUNTA-ICOTEA .group {
+  position: absolute;
+  width: 430px;
+  height: 130px;
+  top: 0;
+  left: 0;
+}
+
+.PUNTA-ICOTEA .overlap-wrapper {
+  position: absolute;
+  width: 435px;
+  height: 222px;
+  top: 774px;
+  left: 286px;
+}
+
+.PUNTA-ICOTEA .overlap-2 {
+  position: relative;
+  width: 433px;
+  height: 215px;
+}
+
+.PUNTA-ICOTEA .group-2 {
+  position: absolute;
+  width: 107px;
+  height: 206px;
+  top: 0;
+  left: 2px;
+}
+
+.PUNTA-ICOTEA .group-3 {
+  position: absolute;
+  width: 109px;
+  height: 206px;
+  top: 0;
+  left: 218px;
+}
+
+.PUNTA-ICOTEA .group-4 {
+  position: absolute;
+  width: 109px;
+  height: 162px;
+  top: 44px;
+  left: 109px;
+}
+
+.PUNTA-ICOTEA .group-5 {
+  position: absolute;
+  width: 106px;
+  height: 162px;
+  top: 44px;
+  left: 326px;
+}
+
+.PUNTA-ICOTEA .rectangle-6 {
+  position: absolute;
+  width: 433px;
+  height: 215px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(217, 217, 217, 0.76) 0%, rgba(115, 115, 115, 0.76) 100%);
+}
+
+.PUNTA-ICOTEA .rectangle-7 {
+  position: absolute;
+  width: 432px;
+  height: 270px;
+  top: 716px;
+  left: 286px;
+  background: linear-gradient(180deg, rgb(20.05, 11.51, 54.19) 0%, rgb(159.38, 132.04, 100.94) 100%);
+  opacity: 0.85;
+}
+
+
+.PUNTA-ICOTEA .gravity-ui-qr-code {
+  position: absolute;
+  width: 176px;
+  height: 176px;
+  top: 702px;
+  left: 420px;
+}
+
+.PUNTA-ICOTEA .ph-copyright {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  top: 949px;
+  left: 589px;
+}
+
+.PUNTA-ICOTEA .text-wrapper {
+  position: absolute;
+  width: 279px;
+  height: 24px;
+  top: 938px;
+  left: 366px;
+  font-family: "Klee One", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.PUNTA-ICOTEA .el-lago-de-los {
+  position: absolute;
+  width: 187px;
+  height: 132px;
+  top: 100px;
+  left: 415px;
+  text-shadow: 0px 4px 4px #00000040;
+  -webkit-text-stroke: 1px #ffdd2e;
+  font-family: "Koulen", Helvetica;
+  font-weight: 400;
+  color: #0b0073;
+  font-size: 31px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 39.8px;
+}
+
+.PUNTA-ICOTEA .span {
+  font-family: "Koulen", Helvetica;
+  font-weight: 400;
+  color: #0b0073;
+  font-size: 31px;
+  letter-spacing: 0;
+  line-height: 39.8px;
+}
+
+.PUNTA-ICOTEA .text-wrapper-2 {
+  font-size: 17px;
+  line-height: 21.8px;
+}
+
+.PUNTA-ICOTEA .vector-wrapper {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  top: 474px;
+  left: 451px;
+  background-color: #0250a5;
+  border-radius: 55px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+
+.PUNTA-ICOTEA .group-6 {
+  position: absolute;
+  width: 1000px;
+  height: 2500px;
+  top: 30px;
+  left: 262px;
+}
+
+.PUNTA-ICOTEA .overlap-3 {
+  position: absolute;
+  width: 980px;
+  height: 2124px;
+  top: 0;
+  left: 9px;
+}
+
+.PUNTA-ICOTEA .rectangle-8 {
+  position: absolute;
+  width: 980px;
+  height: 2124px;
+  top: 861px;
+  left: 0;
+  background-color: #14a1d9;
+}
+
+.PUNTA-ICOTEA .rectangle-9 {
+  position: absolute;
+  width: 980px;
+  height: 2124px;
+  top: 0;
+  left: 0;
+  filter: blur(8.1px);
+  background: linear-gradient(180deg, rgb(2, 80, 165) 0%, rgb(20, 161, 217) 100%);
+}
+
+.PUNTA-ICOTEA .overlap-4 {
+  position: absolute;
+  width: 475px;
+  height: 147px;
+  top: 5949px;
+  left: 156px;
+}
+
+.PUNTA-ICOTEA .frame-2 {
+  position: absolute;
+  width: 980px;
+  height: 2124px;
+  top: 66px;
+  left: 8px;
+}
+
+.PUNTA-ICOTEA .frame-3 {
+  position: absolute;
+  width: 980px;
+  height: 2124px;
+  top: 52px;
+  left: 8px;
+}
+
+
+.PUNTA-ICOTEA .rectangle-10 {
+  position: absolute;
+  width: 980px;
+  height: 2224px;
+  top: 36px;
+  left: 288px;
+  background-color: #76e4ff;
+}
+
+.PUNTA-ICOTEA .div-wrapper {
+  position: absolute;
+  width: 1007px;
+  height: 1007px;
+  top: 0;
+  left: 0;
+}
+
+.PUNTA-ICOTEA .overlap-5 {
+  position: relative;
+  width: 980px;
+  height: 2124px;
+  top: 48px;
+  left: 288px;
+}
+
+
+.PUNTA-ICOTEA .group-7 {
+  position: absolute;
+  width: 980px;
+  height: 2124px;
+  top: 0;
+  left: 0;
+}
+
+.PUNTA-ICOTEA .ri-emotion-happy {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  top: 55px;
+  left: 831px;
+  overflow: hidden;
+}
+
+.PUNTA-ICOTEA .overlap-6 {
+  position: relative;
+  height: 64px;
+  left: 1px;
+}
+
+
+.PUNTA-ICOTEA .ri-emotion-happy-2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  left: 0;
+}
+
+.PUNTA-ICOTEA .overlap-group-2 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  top: 3px;
+  left: 1px;
+}
+
+
+.PUNTA-ICOTEA .mask-group {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  top: 0;
+  left: 0;
+}
+
+.PUNTA-ICOTEA .ant-design-home {
+  position: fixed;
+  width: 125px;
+  height: 200px;
+  top: 10px;
+  left: 37px;
+  z-index: 9999;
+}
+
+.PUNTA-ICOTEA .document {
+  position: absolute;
+  width: 284px;
+  height: 284px;
+  top: 256px;
+  left: 363px;
+  background-color: #000000;
+}
+
+.PUNTA-ICOTEA .group-8 {
+  position: absolute;
+  width: 457px;
+  height: 457px;
+  top: 700px;
+  left: 489px;
+}
+
+.PUNTA-ICOTEA .overlap-7 {
+  position: relative;
+  width: 457px;
+  height: 457px;
+  left: -8px;
+}
+
+.PUNTA-ICOTEA .mask-group-2 {
+  position: absolute;
+  width: 657px;
+  height: 657px;
+  top: -200px;
+  left: -20px;
+}
+
+.PUNTA-ICOTEA .text-wrapper-3 {
+  position: absolute;
+  width: 547px;
+  height: 72px;
+  top: 494px;
+  left: 33px;
+  -webkit-text-stroke: 1px #ffffff;
+  font-family: "Koulen", Helvetica;
+  font-weight: 1000;
+  color: #0250a3;
+  font-size: 78px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 58.8px;
+}
+
+.PUNTA-ICOTEA .rectangle-11 {
+  position: absolute;
+  width: 477px;
+  height: 70px;
+  top: 163px;
+  left: 530px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.PUNTA-ICOTEA .text-wrapper-4 {
+  position: absolute;
+  width: 477px;
+  height: 70px;
+  top: 185px;
+  left: 530px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 700;
+  color: #0250a3;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 19.3px;
+}
+
+.PUNTA-ICOTEA .group-9 {
+  position: absolute;
+  width: 195px;
+  height: 60px;
+  top: 867px;
+  left: 409px;
+}
+
+.PUNTA-ICOTEA .overlap-8 {
+  position: relative;
+  width: 393px;
+  height: 90px;
+  left: -80px;
+  top: 200px;
+}
+
+.PUNTA-ICOTEA .rectangle-12 {
+  position: absolute;
+  width: 358px;
+  height: 91px;
+  top: 11px;
+  left: 17px;
+  background-color: #0250a3;
+  border-radius: 39px;
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+.PUNTA-ICOTEA .text-wrapper-5 {
+  position: absolute;
+  width: 193px;
+  height: 60px;
+  top: 35px;
+  left: 75px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Koulen", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 63px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 42.4px;
+}
+
+.PUNTA-ICOTEA .hugeicons-play {
+  position: absolute;
+  width: 231px;
+  height: 231px;
+  top: 605px;
+  left: 443px;
+}
+
+.PUNTA-ICOTEA .vector-58 {
+  position: absolute;
+  width: 191px;
+  height: 191px;
+  top: -80px;
+  left: 0;
+}
+
+.PUNTA-ICOTEA .rectangle-13 {
+  position: absolute;
+  width: 612px;
+  height: 305px;
+  top: 734px;
+  left: 227px;
+  background-color: #ffffff;
+  border-radius: 32px;
+}
+
+.PUNTA-ICOTEA .paledonias-y {
+  position: absolute;
+  width: 298px;
+  height: 278px;
+  top: 754px;
+  left: 235px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 27px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 29px;
+}
+
+.PUNTA-ICOTEA .donde-viv-cuando-ni {
+  position: absolute;
+  width: 284px;
+  height: 278px;
+  top: 754px;
+  left: 548px;
+  font-family: "Montserrat", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 27px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 29px;
+}
+
+.PUNTA-ICOTEA .line {
+  position: absolute;
+  width: 1px;
+  height: 190px;
+  top: 783px;
+  left: 534px;
+  object-fit: cover;
+}
+
+.PUNTA-ICOTEA .mingcute-star-fill {
+  position: absolute;
+  width: 53px;
+  height: 53px;
+  top: 642px;
+  left: 369px;
+}
+
+.PUNTA-ICOTEA .group-10 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -65px;
+  left: -90px;
+}
+
+.PUNTA-ICOTEA .fluent-info {
+  position: absolute;
+  width: 89px;
+  height: 89px;
+  top: 580px;
+  left: 699px;
+}
+
+.PUNTA-ICOTEA .text-wrapper-6 {
+  position: absolute;
+  width: 252px;
+  height: 69px;
+  top: 1805px;
+  left: -419px;
+  font-family: "Koulen", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 64.2px;
+  white-space: nowrap;
+}
+
+/* Evitar que cambie en diferentes pantallas */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Contenedor principal */
+.PUNTA-ICOTEA {
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Subcontenedor */
+.PUNTA-ICOTEA .div {
+  width: 980px;
+  height: 2124px;
+  position: relative;
+}
+
+/* Superposición y elementos dentro */
+.PUNTA-ICOTEA .overlap {
+  position: absolute;
+  width: 1007px;
+  height: 1164px;
+  top: -48px;
+  left: -288px;
+}
+
+/* Ejemplo de elementos dentro */
+.PUNTA-ICOTEA .rectangle {
+  position: absolute;
+  width: 430px;
+  height: 163px;
+  top: 553px;
+  left: 288px;
+  background: linear-gradient(180deg, #e5bb89 0%, rgba(75, 56, 40, 0.87) 100%);
+}
+
+.PUNTA-ICOTEA .rectangle-2 {
+  position: absolute;
+  width: 430px;
+  height: 374px;
+  top: 36px;
+  left: 288px;
+  background-color: #bde7fd;
+}
+
+/* Otros elementos como imágenes */
+.PUNTA-ICOTEA .vector {
+  position: absolute;
+  width: 116px;
+  height: 341px;
+  top: 55px;
+  left: 288px;
+}
+
+.PUNTA-ICOTEA .text-wrapper {
+  position: absolute;
+  width: 279px;
+  top: 938px;
+  left: 366px;
+  font-family: "Klee One", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 11px;
+  text-align: center;
+}
+
+.PUNTA-ICOTEA .el-lago-de-los {
+  position: absolute;
+  width: 187px;
+  top: 100px;
+  left: 415px;
+  font-family: "Koulen", sans-serif;
+  font-weight: 400;
+  color: #0b0073;
+  font-size: 31px;
+  text-align: center;
+}
+
+.PUNTA-ICOTEA .group {
+  position: absolute;
+  top: 800px;
+  left: 250px;
+}

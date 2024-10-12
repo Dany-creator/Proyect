@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="PUNTA-ICOTEA">
+    <div class="div">
+      <div class="overlap">
+        <div class="overlap-group-wrapper">
+          <div class="overlap-group">
+            <div class="ellipse"></div>
+            <img class="group" src="img/group.png" />
+          </div>
+        </div>
+        <div class="group-6">
+          <div class="overlap-3">
+            <div class="rectangle-8"></div>
+            <div class="rectangle-9"></div>
+          </div>
+        </div>
+        <div class="rectangle-10"></div>
+        <div class="div-wrapper">
+          <div class="overlap-5">
+            <img class="group-7" src="img/group-5.png" />
+            <div class="ri-emotion-happy">
+              <div class="overlap-6">
+                <div class="ri-emotion-happy-2">
+                  <div class="overlap-group-2">
+                    <img class="mask-group" src="img/mask-group.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="../index.html">
+              <img class="ant-design-home" src="img/ant-design-home-filled.svg" />
+            </a>
+          </div>
+        </div>
+        <div class="group-8">
+          <div class="overlap-7">
+            <img class="mask-group-2" id="dynamicImage" src="img/mask-group-1.png" />
+            <div class="text-wrapper-3" id="dynamicTitle">Punta icotea</div>
+          </div>
+        </div>
+        <div class="rectangle-11"></div>
+        <div class="text-wrapper-4">Repícame la tambora</div>
+        <div class="group">
+          <div class="group-9">
+            <div class="overlap-8" id="regresa">
+              <div class="rectangle-12"></div>
+              <div class="text-wrapper-5">Regresar</div>
+            </div>
+          </div>
+          <div class="hugeicons-play" id="playPauseButton">
+            <img class="vector-58" id="playPauseIcon" src="img/vector-6.svg" />
+          </div>
+          <div class="rectangle-13"></div>
+          <p class="paledonias-y" id="dynamicText1">
+            Paledonias y galletas<br />Una lata de sardina<br />Un bidú y una martina<br />Y que lo anote en <br />la
+            cuenta Punta Icotea <br />es el barrio
+          </p>
+          <p class="donde-viv-cuando-ni" id="dynamicText2">
+            Donde viví cuando niño<br />lleno de historia y cariño<br />Por mi Virgen del Rosario, Cabimas es un
+            santuario de tantos recuerdos míos
+          </p>
+          <img class="line" src="img/line-2.svg" />
+          <div class="mingcute-star-fill"><img class="group-10" src="img/group-6.png" /></div>
+          <img class="fluent-info" src="img/fluent-info-12-filled.svg" />
+        </div>
+        <!-- Sección invisible para la música -->
+        <audio id="backgroundMusic" style="display:none;" controls>
+          <source id="musicSource" src="music/default.mp3" type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="text-wrapper-6">Continuar</div>
+    </div>
+  </div>
+
+  <script>
+    // Función para cargar la selección previa desde localStorage o URL
+    function loadSelection() {
+      // Aquí puedes obtener la selección desde localStorage o la URL.
+      // Ejemplo: usando localStorage para obtener el valor
+      const selection = localStorage.getItem('userSelection') || 'default';
+
+      // Cambiar imagen dependiendo de la selección
+      const imageMap = {
+        'option1': 'img/mask-group-0.png',
+        'option2': 'img/mask-group-0.png',
+        'option3': 'img/mask-group-0.png',
+        'option4': 'img/mask-group-0.png',
+        'option5': 'img/mask-group-0.png',
+        'option6': 'img/mask-group-0.png',
+        'option7': 'img/mask-group-1.png',
+        'option8': 'img/mask-group-1.png',
+        'option9': 'img/mask-group-1.png',
+        'option10': 'img/mask-group-1.png',
+        'option11': 'img/mask-group-1.png',
+        'option12': 'img/mask-group-1.png',
+        'option13': 'img/mask-group-2.png',
+        'option14': 'img/mask-group-2.png',
+        'option15': 'img/mask-group-2.png',
+        'option16': 'img/mask-group-2.png',
+        'option17': 'img/mask-group-2.png',
+        'option18': 'img/mask-group-2.png',
+        'option19': 'img/mask-group-3.png',
+        'option20': 'img/mask-group-3.png',
+        'option21': 'img/mask-group-3.png',
+        'option22': 'img/mask-group-3.png',
+        'option23': 'img/mask-group-3.png',
+        'option24': 'img/mask-group-3.png',
+        'default': 'img/mask-group-1.png'
+      };
+      document.getElementById('dynamicImage').src = imageMap[selection];
+
+      // Cambiar texto dependiendo de la selección
+      const textMap1 = {
+        'option1': 'Texto alternativo para opción 1.',
+        'option2': 'Texto alternativo para opción 2.',
+        'option3': 'Texto alternativo para opción 2.',
+        'option4': 'Texto alternativo para opción 2.',
+        'option5': 'Texto alternativo para opción 2.',
+        'option6': 'Texto alternativo para opción 2.',
+        'option7': 'Paledonias y galletas<br />Una lata de sardina<br />Un bidú y una martina<br />Y que lo anote en <br />la cuenta Punta Icotea <br />es el barrio',
+        'option8': 'Texto alternativo para opción 2.',
+        'option9': 'Texto alternativo para opción 2.',
+        'option10': 'Texto alternativo para opción 2.',
+        'option11': 'Texto alternativo para opción 2.',
+        'option12': 'Texto alternativo para opción 2.',
+        'option13': 'Texto alternativo para opción 2.',
+        'option14': 'Texto alternativo para opción 2.',
+        'option15': 'Texto alternativo para opción 2.',
+        'option16': 'Texto alternativo para opción 2.',
+        'option17': 'Texto alternativo para opción 2.',
+        'option18': 'Texto alternativo para opción 2.',
+        'option19': 'Texto alternativo para opción 2.',
+        'option20': 'Texto alternativo para opción 2.',
+        'option21': 'Texto alternativo para opción 2.',
+        'option22': 'Texto alternativo para opción 2.',
+        'option23': 'Texto alternativo para opción 2.',
+        'option24': 'Paledonias y galletas<br />Una lata de sardina<br />Un bidú y una martina<br/>Y que lo anote en<br/>la cuenta Punta Icotea<br>es el barrio',
+        'default': 'Paledonias y galletas<br />Una lata de sardina<br />Un bidú y una martina<br />Y que lo anote en <br />la cuenta Punta Icotea <br />es el barrio'
+      };
+      document.getElementById('dynamicText1').innerHTML = textMap1[selection];
+
+      const textMap2 = {
+        'option1': 'Otro texto para opción 1.',
+        'option2': 'Otro texto para opción 2.',
+        'option3': 'Texto alternativo para opción 2.',
+        'option4': 'Texto alternativo para opción 2.',
+        'option5': 'Texto alternativo para opción 2.',
+        'option6': 'Texto alternativo para opción 2.',
+        'option7': 'Donde viví cuando niño<br />lleno de historia y cariño<br />Por mi Virgen del Rosario, Cabimas es un santuario de tantos recuerdos míos',
+        'option8': 'Texto alternativo para opción 2.',
+        'option9': 'Texto alternativo para opción 2.',
+        'option10': 'Texto alternativo para opción 2.',
+        'option11': 'Texto alternativo para opción 2.',
+        'option12': 'Texto alternativo para opción 2.',
+        'option13': 'Texto alternativo para opción 2.',
+        'option14': 'Texto alternativo para opción 2.',
+        'option15': 'Texto alternativo para opción 2.',
+        'option16': 'Texto alternativo para opción 2.',
+        'option17': 'Texto alternativo para opción 2.',
+        'option18': 'Texto alternativo para opción 2.',
+        'option19': 'Texto alternativo para opción 2.',
+        'option20': 'Texto alternativo para opción 2.',
+        'option21': 'Texto alternativo para opción 2.',
+        'option22': 'Texto alternativo para opción 2.',
+        'option23': 'Texto alternativo para opción 2.',
+        'option24': 'Donde viví cuando niño<br />Una lata de sardina<br />Un bidú y una martina<br/>Y que lo anote en<br/>la cuenta Punta Icotea<br>es el barrio',
+        'default': 'Donde viví cuando niño<br />lleno de historia y cariño<br />Por mi Virgen del Rosario, Cabimas es un santuario de tantos recuerdos míos'
+      };
+      document.getElementById('dynamicText2').innerHTML = textMap2[selection];
+
+      const textMap3 = {
+        'option1': 'Texto alternativo.',
+        'option2': 'Texto alternativo.',
+        'option3': 'Texto alternativo.',
+        'option4': 'Texto alternativo.',
+        'option5': 'Texto alternativo.',
+        'option6': 'Texto alternativo.',
+        'option7': 'Punta icotea',
+        'option8': 'La negra cocoa coa',
+        'option9': 'La Retreta',
+        'option10': 'Las Cabras',
+        'option11': 'La Gaita que a mi me gusta',
+        'option12': 'Tamborera NO.9',
+        'option13': 'Una luz en el camino',
+        'option14': 'La elegida',
+        'option15': 'Tiene corona',
+        'option16': 'Texto alternativo.',
+        'option17': 'Texto alternativo.',
+        'option18': 'Texto alternativo.',
+        'option19': 'Hablame de Maracaibo',
+        'option20': 'Ay Maracaibo!',
+        'option21': 'Con las manos en el pecho',
+        'option22': 'Con la mas pura intencion',
+        'option23': 'De boca en boca',
+        'option24': 'El zulia vive',
+        'default': 'Punta icotea'
+      };
+      document.getElementById('dynamicTitle').innerHTML = textMap3[selection];
+
+      // Cambiar música dependiendo de la selección
+      const musicMap = {
+        'option1': 'music/song1.mp3',
+        'option2': 'music/song2.mp3',
+        'default': 'music/default.mp3'
+      };
+      document.getElementById('musicSource').src = musicMap[selection];
+      document.getElementById('backgroundMusic').load(); // Recargar el audio
+    }
+
+    // Llamar a la función cuando se cargue la página
+    window.onload = loadSelection;
+  </script>
+  <script>
+    // Variable para saber si la música está reproduciéndose o no
+    let isPlaying = false;
+
+    // Variable para saber si la imagen ha cambiado
+    let isImageChanged = false;
+
+    // Referencia al audio y a la imagen
+    const music = document.getElementById('backgroundMusic');
+    const dynamicImage2 = document.getElementById('playPauseIcon');
+
+    // Imagen original y alternativa
+    const originalImageSrc = 'img/vector-6.svg';
+    const alternateImageSrc = 'img/mask-group-2.png';
+
+    // Función para manejar el clic en el botón de reproducción/pausa
+    document.getElementById('playPauseButton').addEventListener('click', function () {
+      // Alternar la reproducción de música
+      if (isPlaying) {
+        music.pause();
+      } else {
+        music.play();
+      }
+      isPlaying = !isPlaying; // Cambiar el estado de reproducción
+
+      // Alternar la imagen
+      if (isImageChanged) {
+        dynamicImage2.src = originalImageSrc; // Restaurar imagen original
+      } else {
+        dynamicImage2.src = alternateImageSrc; // Cambiar a la imagen alternativa
+      }
+      isImageChanged = !isImageChanged; // Cambiar el estado de la imagen
+    });
+
+    var groupContainer = document.getElementById("regresa");
+    if (groupContainer) {
+      groupContainer.addEventListener("click", function (e) {
+        window.location.href = '../AnimaPackage-Html-2Grws/index.html';
+      });
+    }
+
+  </script>
+
+</body>
+
+</html>
