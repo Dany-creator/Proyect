@@ -253,42 +253,9 @@
 
         if (antDesignhomeFilled) {
             antDesignhomeFilled.addEventListener("click", function (e) {
-                const imageContainer = document.getElementById('imageContainer');
-                const character = document.getElementById('character');
-                const animatedImage = document.getElementById('patron-azul');
-                const Puente = document.getElementById('showImageBtn');
-                const groupImage = document.getElementById('groupContainer');
-                const group = document.getElementById('groupContainer1');
-                const group1 = document.getElementById('groupContainer2');
-                const group2 = document.getElementById('groupContainer3');
-                const group3 = document.getElementById('groupContainer4');
-                const groupImage1 = document.getElementById('groupImage1');
-                const groupImage2 = document.getElementById('groupImage2');
-                const groupImage4 = document.getElementById('groupImage4');
-                const groupImage3 = document.getElementById('groupImage3');
-                const Continuar = document.getElementById('Continuar');
-                const antDesignhomeFilled = document.getElementById('antDesignhomeFilled');
-
-                // Mueve el contenedor de la imagen con clases (usando la transición en CSS)
-
-                // Añadir clases para las imágenes que giran
-                groupImage.classList.add('frame-child');
-                group.classList.add('frame-item');
-                group1.classList.add('frame-inner');
-                group2.classList.add('frame-child1');
-                group3.classList.add('frame-child2');
-                groupImage1.classList.add('astolfo-cabeza-1-parent');
-                groupImage2.classList.add('ricardo-cepeda-cabeza-1');
-                groupImage4.classList.add('frame-parent');
-                groupImage3.classList.add('frame-parent2');
-                Continuar.classList.add('continue1');
-                antDesignhomeFilled.classList.add('ant-designhome-filled-icon1');
-
-                // Ocultar el botón después de un tiempo (también podría hacerse con transición)
-
                 setTimeout(() => {
                     window.location.href = 'C:/Users/PERSONAL/OneDrive/Documentos/Proyecto de Francia/index.html'; // Cambia por la URL de destino
-                }, 550);
+                }, 250);
 
             });
 
