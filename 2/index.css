@@ -1413,7 +1413,7 @@
 }
 
 .menu-de-personajes {
-  width: 100%;
+  width: 430px;
   position: relative;
   background-color: var(--color-white);
   overflow: hidden;
