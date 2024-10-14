@@ -249,17 +249,12 @@
     </div>
 
     <script>
-        var antDesignhomeFilled = document.getElementById("antDesignhomeFilled");
-
-        if (antDesignhomeFilled) {
-            antDesignhomeFilled.addEventListener("click", function (e) {
-                setTimeout(() => {
-                    window.location.href = '../index.html'; // Cambia por la URL de destino
-                }, 250);
-
-            });
-
-        }
+    var antDesignhomeFilled = document.getElementById("antDesignhomeFilled");
+    if (antDesignhomeFilled) {
+      antDesignhomeFilled.addEventListener("click", function (e) {
+        window.location.href = '../index.html';
+      });
+    }
         // Elementos
         const groupContainers = [
             document.getElementById("groupContainer"),
